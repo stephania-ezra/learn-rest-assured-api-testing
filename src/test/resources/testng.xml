@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GoogleMapsSuite" verbose="1">
+    <test name="Places">
+        <groups>
+            <run>
+                <include name="smoke" />
+                <include name="smoke1" />
+                <include name="smoke2" />
+                <include name="smoke3" />
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.AddPlaceTest"/>
+            <class name="tests.RetrievePlaceTest"/>
+            <class name="tests.UpdatePlaceTest"/>
+            <class name="tests.DeletePlaceTest"/>
+        </classes>
+    </test>
+</suite>
